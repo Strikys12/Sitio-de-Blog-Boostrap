@@ -8,7 +8,49 @@
 </head>
 
 <body>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
 
+            <form action="#" method="POST">
+                <!-- Nombre -->
+                <div>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <br>
+
+                <!-- Correo -->
+                <div>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <br>
+
+                <!-- Asunto -->
+                <div>
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                </div>
+                <br>
+
+                <!-- Mensaje -->
+                <div>
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..."
+                        required></textarea>
+                </div>
+                <br>
+
+                <!-- Botón de enviar -->
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blog de Música. Todos los derechos reservados.</p>
+    </footer>
 </body>
 
 </html>
