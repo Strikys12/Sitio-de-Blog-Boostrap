@@ -3,7 +3,8 @@
     --bg-tarjeta: #1e1e1e;
     --texto-principal: #ffffff;
     --texto-secundario: #a7a7a7;
-    --color-acento: #c24f03; 
+    --color-acento: #c24f03;
+    --color-navegacion: #d96c9d;
 }
 
 * {
@@ -12,6 +13,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-oscuro);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
 
 header {
     text-align: center;
@@ -31,33 +38,58 @@ header p {
 }
 
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
+.navbar {
+    background-color: #20252a !important;
+    border-bottom: 1px solid #282828;
 }
 
-nav a {
+.navbar .navbar-brand {
     color: var(--texto-principal);
-    text-decoration: none;
     background-color: #282828;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .navbar-brand:focus {
+    color: var(--texto-principal);
+    background-color: var(--color-navegacion);
+}
+
+.navbar .navbar-nav {
+    gap: 20px;
+}
+
+.navbar .nav-link {
+    color: var(--texto-secundario);
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav a:hover {
-    background-color: var(--color-acento);
-    color: #000000;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg-oscuro);
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
     color: var(--texto-principal);
-    line-height: 1.6;
+    background-color: var(--color-navegacion);
+}
+
+.navbar .nav-link.active {
+    color: var(--texto-principal);
+    background-color: var(--color-navegacion);
+}
+
+.navbar-toggler {
+    border-color: var(--texto-secundario);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(217, 108, 157, 0.35);
 }
 
 main {
@@ -152,4 +184,15 @@ footer {
 footer p {
     color: var(--texto-secundario);
     font-size: 0.85rem;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav {
+        gap: 8px;
+        padding-top: 12px;
+    }
+
+    .navbar .nav-link {
+        width: 100%;
+    }
 }
