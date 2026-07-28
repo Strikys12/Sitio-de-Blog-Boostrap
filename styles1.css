@@ -1,0 +1,48 @@
+:root {
+
+    --bg-oscuro: #121212;
+    --bg-tarjeta: #1e1e1e;
+    --texto-principal: #ffffff;
+    --texto-secundario: #a7a7a7;
+    --color-acento: #c24f03;
+
+}
+
+
+body {
+
+    background-color: var(--bg-oscuro);
+    color: var(--texto-principal);
+
+}
+
+
+header {
+
+    background-color: #181818;
+    border-bottom: 1px solid #282828;
+
+}
+
+
+.lead {
+
+    color: var(--texto-secundario);
+
+}
+
+
+.btn-dark {
+
+    background-color: #282828;
+    border: none;
+
+}
+
+
+.btn-dark:hover {
+
+    background-color: var(--color-acento);
+    color:black;
+
+}
