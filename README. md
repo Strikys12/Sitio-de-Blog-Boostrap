@@ -1,0 +1,60 @@
+# 🎵 Sitio de Blog Musical
+
+## 📌 Descripción del proyecto
+
+Sitio web desarrollado como proyecto de refactorización, aplicando el framework **Bootstrap** para mejorar la estructura, diseño responsive y reutilización de componentes.
+
+La página está enfocada en mostrar información sobre artistas representativos de diferentes géneros musicales como **Pop, Rock y Género Urbano**, además de incluir una sección de información del equipo y un formulario de contacto.
+
+---
+
+## 🎯 Objetivo del proyecto
+
+Refactorizar una página web creada inicialmente con HTML y CSS puro, implementando Bootstrap para:
+
+- Mejorar la organización del código.
+- Crear un diseño adaptable a diferentes dispositivos.
+- Utilizar componentes reutilizables.
+- Mejorar la experiencia visual del usuario.
+
+---
+
+## 🚀 Funcionalidades
+
+✅ Página principal con artistas destacados.
+
+✅ Organización por géneros musicales:
+- Pop
+- Rock
+- Género Urbano
+
+✅ Sección "Quiénes Somos" con:
+- Historia del proyecto.
+- Carrusel de imágenes.
+- Valores del equipo.
+
+✅ Página de contacto con formulario.
+
+✅ Diseño responsive utilizando Bootstrap.
+
+✅ Navbar y footer reutilizables.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+### Frontend
+
+- HTML5
+- CSS3
+- Bootstrap 5.3.8
+
+### Herramientas
+
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## 📂 Estructura del proyecto

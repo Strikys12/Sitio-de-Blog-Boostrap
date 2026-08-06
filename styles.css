@@ -1,0 +1,219 @@
+/* =========================
+   VARIABLES DE COLOR
+========================= */
+
+:root {
+    --bg-oscuro: #121212;
+    --bg-tarjeta: #1E1E1E;
+    --texto-principal: #FFFFFF;
+    --texto-secundario: #B3B3B3;
+    --color-acento: #F28C28;
+    --color-dorado: #FFB703;
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--bg-oscuro);
+    color: var(--texto-principal);
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #000 !important;
+    border-bottom: 2px solid var(--color-acento);
+}
+
+
+.navbar-brand {
+    color: var(--color-acento) !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+.nav-link {
+    color: var(--texto-principal) !important;
+    transition: 0.3s;
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--color-acento) !important;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--texto-principal);
+}
+
+
+header p {
+    color: var(--texto-secundario);
+}
+
+
+/* =========================
+   TITULOS
+========================= */
+
+h2 {
+    color: var(--color-acento);
+    font-weight: bold;
+}
+
+
+h3 {
+    color: var(--color-dorado);
+}
+
+
+/* =========================
+   CARDS INDEX
+========================= */
+
+.card {
+    background-color: var(--bg-tarjeta);
+    color: var(--texto-principal);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-acento);
+    box-shadow: 0 10px 25px rgba(242, 140, 40, 0.25);
+}
+
+
+.card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+
+.card p,
+.card li {
+    color: var(--texto-secundario);
+}
+
+
+/* =========================
+   CARRUSEL NOSOTROS
+========================= */
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* =========================
+   FORMULARIO CONTACTO
+========================= */
+
+.card form {
+    background-color: transparent;
+}
+
+
+.form-label {
+    color: var(--texto-principal);
+}
+
+
+.form-control {
+    background-color: #0f0f0f;
+    border: 1px solid #444;
+    color: white;
+}
+
+
+.form-control:focus {
+    background-color: #0f0f0f;
+    color: white;
+    border-color: var(--color-acento);
+    box-shadow: 0 0 8px rgba(242,140,40,0.4);
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.btn-dark {
+    background-color: var(--color-acento);
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+.btn-dark:hover {
+    background-color: var(--color-dorado);
+    color: #000;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #000;
+    border-top: 2px solid var(--color-acento);
+}
+
+
+footer p {
+    color: var(--texto-secundario);
+}
+
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+
+    .card img {
+        height: 220px;
+    }
+
+}
